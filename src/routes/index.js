@@ -24,7 +24,7 @@ router.post('/send-email',async (req, res)=>{
         secure: false,
         auth: {
             user: 'alexzambra2610@gmail.com',
-            pass: 'zambrano2610%'
+            pass: ''
         },
         tls: {
             rejectUnauthorized: false
