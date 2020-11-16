@@ -38,10 +38,10 @@
       <div class='hello col-12 mx-auto pt-4 d-flex row'>
                 
         <ul class='listS'>
-          <li><i class="fa fa-github fa-2x text-light" aria-hidden="true"></i></li>
-          <li><i class="fa fa-linkedin-square fa-2x text-light" aria-hidden="true"></i></li>
-          <li><i class="fa fa-angellist fa-2x text-light" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter-square fa-2x text-light" aria-hidden="true"></i></li>     
+          <li><a href='https://github.com/Alexoid1' target='_blanck'><i class="fa fa-github fa-2x text-light" aria-hidden="true"></i></a></li>
+          <li><a href='https://www.linkedin.com/in/alexzambranocoral/' target='_blanck'><i class="fa fa-linkedin-square fa-2x text-light" aria-hidden="true"></i></a></li>
+          <li><a href='https://angel.co/u/pablo-alexis-zambrano-coral'  target="_blanck"><i class="fa fa-angellist fa-2x text-light" aria-hidden="true"></i></a></li>
+          <li><a href='https://twitter.com/pablo_acz' target="_blanck"><i class="fa fa-twitter-square fa-2x text-light" aria-hidden="true"></i></a></li>     
         </ul>
                 
                 
@@ -123,7 +123,7 @@
               <p class='titlee'>A meme generator using a Public API (imgflip).</p>
               <div class='techUsed2 row'>
                 <p>React</p>
-                <p>Bootstrap</p>
+                <p>Css</p>
               </div>
               
             </div>
@@ -152,7 +152,7 @@
       <div class='aboutCont row'>
         <div class='col-5 aboutHeader'>
           <h1>About me</h1>
-          <p>Hi, I'm Alexis Zambrano I am a product-focused software developer from Quito-Ecuador. My expertise is in web technologies, particularly JavaScript and Ruby on Rails. I focus on delivering business value while building maintainable applications with tests and embracing standards.
+          <p>Hi, I'm Alex Zambrano I am a product-focused software developer from Quito-Ecuador. My expertise is in web technologies, particularly JavaScript and Ruby on Rails. I focus on delivering business value while building maintainable applications with tests and embracing standards.
           
         </div>
         <div class='col-7 mx-auto'>
@@ -182,6 +182,7 @@
           <ul>
             <h3>Libraries</h3>
             <li>React</li>
+            <li>Redux</li>
             <li>D3</li>
             <li>Bulma</li>
             <li>Bootstrap</li>
@@ -208,43 +209,53 @@
       </div>
      
     </div>
-    <div class='col-11 mx-auto'>
-      <div class="row">
-        <div class='col-6'></div>
-        <div class="col-md-6 ">
-            <div class="card">
-                <div class="card-body">
-                    <form action="/send-email" method="POST">
-
-                        <div class="form-group">
-                          <input type="text" name="company" placeholder="Company name" class="form-control">
-                        </div>
-  
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Name" autofocus>
-                        </div>
-  
-                        <div class="form-group">
-                            <input type="text" name="email" placeholder="Email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="textarea" name="message" placeholder="Message" class="form-control">
-                        </div>
-  
-                        <button class="btn btn-primary btn-block">
-                            Send
-                        </button>
-  
-                    </form>
-                </div>
-            </div>
+    <div class='footerCont'>
+      <div class="row formCont">
+        <div class='col-5'>
+          <div class='contactM'>
+            <p class='mesagge'>I'm always interested in hearing about new projects, so If you'd like to chat please get in touch.</p>
+          </div>
+          
         </div>
-    </div>
-    </div>
-    
-    
-  </div>
+        <div class="col-7">
+            
+          <div class="card-body">
+            <form action="/send-email" method="POST" class='formC'>
+
+              <div class='formName'>
+                <input type="text" name="company" placeholder="Company name" class='inputForm' >
+                          
+                <input type="text" name="name"  placeholder="Name" class='inputForm'>
+              </div>
+              <div>
+                <input type="email" name="email" placeholder="Email" class="inputForm w-100">
+              </div>
+              <div>             
+                <textarea id="comentario" name="message" rows="3" cols="77"  placeholder='Write your message' class="w-100 textArea"></textarea>
+              </div>
+  
+              <button class="btn btn-primary mt-4" id='botonSend' type='submit'>
+                Get In Touch
+              </button>
+  
+            </form>
+          </div>
+            
+        </div>
+        
+      </div>
       
+    </div>
+    
+    
+    <footer>
+      <a href='https://github.com/Alexoid1' target='_blanck'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href='https://www.linkedin.com/in/alexzambranocoral/' target='_blanck'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+      <a href='https://twitter.com/pablo_acz' target="_blanck"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+      <a href='https://angel.co/u/pablo-alexis-zambrano-coral'><i class="fa fa-angellist fa-2x" aria-hidden="true"></i></a>
+    </footer>
+  </div>
+      <script></script>
       <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
 </body>
