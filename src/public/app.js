@@ -6,6 +6,33 @@ const ican=document.getElementById('ican');
 const aboutNav=document.getElementById('aboutNav');
 const contactNav=document.getElementById('contactNav');
 const myworks=document.getElementById('myworks');
+const mainProjectH=document.getElementById('mainProjectH');
+const mainProjectD=document.getElementById('mainProjectD');
+const procj1T=document.getElementById('procj1T');
+const procj1D=document.getElementById('procj1D');
+const procj2T=document.getElementById('procj2T');
+const procj2D=document.getElementById('procj2D');
+const procj3T=document.getElementById('procj3T');
+const procj3D=document.getElementById('procj3D');
+const procj4T=document.getElementById('procj4T');
+const procj4D=document.getElementById('procj4D');
+const aboutmeH=document.getElementById('aboutmeH');
+const aboutmeD=document.getElementById('aboutmeD');
+const languages=document.getElementById('languages');
+const frameworks=document.getElementById('frameworks');
+const libraries=document.getElementById('libraries');
+const databases=document.getElementById('databases');
+const skills=document.getElementById('skills');
+const message=document.getElementById('message');
+const company=document.getElementById('company');
+const name=document.getElementById('name');
+const email=document.getElementById('email');
+const write=document.getElementById('write');
+const botonSend=document.getElementById('botonSend');
+const formContact=document.getElementById('formContact');
+
+
+
 
 const spanish={
     hi:'Hola.<br>Soy Alex',
@@ -15,7 +42,28 @@ const spanish={
     contactNav:'Contacto',
     botonSpanish:'Español',
     botonEnglish:'Inglés',
-    myworks:'Mi Trabajo Reciente'
+    myworks:'Mi Trabajo Reciente',
+    mainProjectH:'Red Social de Biología',
+    mainProjectD:'Esta es una red social para biólogos donde el usuario puede compartir sus avistamientos de especies, compartir posts, seguir otro usuarios, y registrar sus actividad a diario y semanalmente.',
+    procj1T:'Batería',
+    procj1D:'Toca la batería con el Teclado',
+    procj2T:'Eventos',
+    procj2D:'Es un sitio web de Eventos donde el usuario puede asistir a eventos crear eventos, incluye una autenticación de usuario.',
+    procj3T:'Generador de Memes',
+    procj3D:'Un generador de memes usando la API pública de (imgflip).',
+    procj4T:'Buscador de Letras',
+    procj4D:'Busca letras de canciónes usando la API (musixMatch).',
+    aboutmeH:'Sobre mí',
+    aboutmeD:'Hola soy Alex Zambrano soy un desarrollador de software enfocado a producción de Quito-Ecuador. Mi habilidad en tecnologías de web es particularmente en Javascript y Ruby on Rails. Me enfoco en brindar valor comercial mientras construyo aplicaciónes mantenibles con pruebas y adoptando estándares de producción.',
+    languages:'Lenguajes',
+    libraries:'Librerías',
+    databases:'Bases de Datos',
+    skills:'Herramientas',
+    message:'Yo siempre estoy interesado en escuchar sobre nuevos proyectos, así que si te gustaría hablar ponte en contacto.',
+    company:'Compania',
+    name:'Nombre',
+    write:'Escribe tu mensaje',
+    botonSend:'Contacto'
 
 }
 
@@ -27,7 +75,28 @@ const english ={
     contactNav:'Contact',
     botonSpanish:'Spanish',
     botonEnglish:'English',
-    myworks:'My Recent Works'
+    myworks:'My Recent Works',
+    mainProjectH:'Biologist Social Media',
+    mainProjectD:'This is a social-media where the user can share the species sightings with other users, share posts, follow other users, and track his activity daily and weekly.',
+    procj1T:'Drum Machine',
+    procj1D:'Play the drum with the keyboard',
+    procj2T:'Events',
+    procj2D:'This is a events web-site where the user can attend events and post events, and it includes user authentication.',
+    procj3T:'Meme Generator',
+    procj3D:'A meme generator using a Public API (imgflip).',
+    procj4T:'Lyrics Finder',
+    procj4D:'This is a lyrics finder using the API (musixMatch).',
+    aboutmeH:'About me',
+    aboutmeD:"Hi, I'm Alex Zambrano I am a product-focused software developer from Quito-Ecuador. My expertise is in web technologies, particularly JavaScript and Ruby on Rails. I focus on delivering business value while building maintainable applications with tests and embracing standards.",
+    languages:'Languages',
+    libraries:'Libraries',
+    databases:'Databases',
+    skills:'Skills',
+    message:"I'm always interested in hearing about new projects, so If you'd like to chat please get in touch.",
+    company:'Company',
+    name:'Name',
+    write:'Write your Message',
+    botonSend:'Get In Touch'
 
 }
 
@@ -39,7 +108,29 @@ botonSpanish.addEventListener('click',()=> {
     contactNav.textContent=spanish.contactNav,
     botonEnglish.textContent=spanish.botonEnglish,
     botonSpanish.textContent=spanish.botonSpanish,
-    myworks.textContent=spanish.myworks
+    myworks.textContent=spanish.myworks,
+    mainProjectH.textContent=spanish.mainProjectH,
+    mainProjectD.textContent=spanish.mainProjectD,
+    procj1T.textContent=spanish.procj1T,
+    procj1D.textContent=spanish.procj1D,
+    procj2T.textContent=spanish.procj2T,
+    procj2D.textContent=spanish.procj2D,
+    procj3T.textContent=spanish.procj3T,
+    procj3D.textContent=spanish.procj3D,
+    procj4T.textContent=spanish.procj4T,
+    procj4D.textContent=spanish.procj4D,
+    aboutmeH.textContent=spanish.aboutmeH,
+    aboutmeD.textContent=spanish.aboutmeD,
+    languages.textContent=spanish.languages,
+    libraries.textContent=spanish.libraries,
+    databases.textContent=spanish.databases,
+    skills.textContent=spanish.skills,
+    message.textContent=spanish.message,
+    company.placeholder=spanish.company,
+    name.placeholder=spanish.name,
+    write.placeholder=spanish.write,
+    botonSend.textContent=spanish.botonSend
+    
 })
 
 botonEnglish.addEventListener('click', ()=>{
@@ -50,5 +141,27 @@ botonEnglish.addEventListener('click', ()=>{
     contactNav.textContent=english.contactNav,
     botonSpanish.textContent=english.botonSpanish,
     botonEnglish.textContent=english.botonEnglish,
-    myworks.textContent=english.myworks
+    myworks.textContent=english.myworks,
+    mainProjectH.textContent=english.mainProjectH,
+    mainProjectD.textContent=english.mainProjectD,
+    procj1T.textContent=english.procj1T,
+    procj1D.textContent=english.procj1D,
+    procj2T.textContent=english.procj2T,
+    procj2D.textContent=english.procj2D,
+    procj3T.textContent=english.procj3T,
+    procj3D.textContent=english.procj3D,
+    procj4T.textContent=english.procj4T,
+    procj4D.textContent=english.procj4D,
+    aboutmeH.textContent=english.aboutmeH,
+    aboutmeD.textContent=english.aboutmeD,
+    languages.textContent=english.languages,
+    libraries.textContent=english.libraries,
+    databases.textContent=english.databases,
+    skills.textContent=english.skills,
+    message.textContent=english.message,
+    company.placeholder=english.company,
+    name.placeholder=english.name,
+    write.placeholder=english.write,
+    botonSend.textContent=english.botonSend
 })
+
