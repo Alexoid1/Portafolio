@@ -92,6 +92,7 @@
   padding: 10px 5px;
   border: 2px solid black;
   margin: 6px;
+  
 }
 
 .projects {
@@ -329,9 +330,87 @@ footer {
 footer a > i {
   color: #1b2c3f;
 }
+.modalC {
+ 
+  position:fixed;
+  z-index: 100;
+  width:100%;
+  height: 100vh;
+  top:0;
+  left:0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.modal1C {
+  background: white;
+  width: 1050px;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;  
+  transform: translateY(-200%);
+  transition: ease-in-out 0.5s;
+}
 
+.modalX {
+  transform: translateY(0%);
+}
 
+.closeB {
+  position: absolute;
+  top:5px;
+  right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size:20px;
+  background:#c44a4a;
+  color:white;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
 
+.modalp1 {
+  margin: 18px;
+}
+
+.mdm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imagemodal {
+  height: 450px;
+  overflow: hidden;
+  width: 700px;
+  text-align: center;
+  
+} 
+
+.modalSec1 {
+  width: 60%;
+}
+
+.modalSec2 {
+  width: 35%;
+}
+
+.modalSec2 p {
+  font-size: 20px;
+}
+
+.tech {
+  margin-left: 0;
+}
+
+.diss1, .diss2, .diss3, .diss4 {
+  display:none;
+}
 
 
 
