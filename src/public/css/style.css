@@ -692,6 +692,12 @@ footer a > i {
     margin-top: 1px;
   }
 
+  .imagemodal {
+    width: 100%;
+    height: 130px;
+    margin: auto;
+  }
+
 }
 
 
