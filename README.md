@@ -1,7 +1,7 @@
 # My Portafolio
 This is a webpage in html, css and express where I show my best projects.
 
-![screenshot](./images/screen.png)
+
 
 
 ## Built With
@@ -13,7 +13,7 @@ This is a webpage in html, css and express where I show my best projects.
 
 
 ## Live Demo
-[Live Demo Link]()
+[Live Demo Link](https://alexoid-portafolio.herokuapp.com)
  
 
 ### Prerequisites
