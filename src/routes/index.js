@@ -24,7 +24,7 @@ router.post('/send-email',async (req, res)=>{
         secure: false,
         auth: {
             user: 'alexzambra2610@gmail.com',
-            pass: ''
+            pass: 'zambrano2610%'
         },
         tls: {
             rejectUnauthorized: false
@@ -35,7 +35,6 @@ router.post('/send-email',async (req, res)=>{
         from: '"Alexoid1 Server"', // sender address,
         to: 'alex_zam@hotmail.es',
         subject: 'Website Contact Form',
-        // text: 'Hello World'
         html: contentHTML
     })
 
