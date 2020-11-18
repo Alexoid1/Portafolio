@@ -23,7 +23,7 @@
 .hello h1 {
   color: #ee6c20;
   font-family: 'Roboto Slab', serif;
-  font-size: 60px;
+  font-size: 53px;
 }
 
 .nav-link {
@@ -48,6 +48,11 @@
 
 .marginTop {
   margin-top: 145px;
+  width: 50%;
+}
+
+.headCont {
+  width: 35%;
 }
 
 .portafolio {
@@ -58,6 +63,8 @@
 
 .portHeader {
   margin: 110px 0 80px;
+  display: flex;
+  flex-direction: row;
 }
 
 .hp3 {
@@ -81,23 +88,27 @@
 .proj1 {
   background: #ee6c20;
   padding:35px 0;
-  
+
 }
 
 .proj1 img {
   box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
+.techUsed {
+  margin-left: 0;
+}
+
 .techUsed p{
   padding: 10px 5px;
-  border: 2px solid black;
-  margin: 6px;
+  border: 1px solid black;
+  margin: 6px 6px 6px 0;
   
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
 }
 
 .colGrid {
@@ -137,7 +148,7 @@
 
 .imagePro1 {
   height: 420px;
-  background: linear-gradient(180deg, rgba(238,250,31,0) 0%, rgba(0,0,0,0.8) 65%);  
+  background: linear-gradient(180deg, rgba(238,250,31,0) 0%, rgba(0,0,0,0.7) 65%);  
   font-family: 'Roboto', serif;
   color: white;
   display: flex;
@@ -177,7 +188,7 @@
 
 .techUsed2 p {
   padding: 7px 4px;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 3px;
   color: white;
   background: grey;
@@ -204,6 +215,8 @@
 .aboutCont {
   width: 82%;
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .lineh {
@@ -282,7 +295,6 @@ ul h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 
 .formC div {
@@ -309,15 +321,29 @@ ul h3 {
   border-bottom: 1px solid #fff;
 }
 
-#botonSend {
+.botonSend {
   background:#ee6c20;
-  padding: 10px 22px;
+  padding: 10px 16px;
   font-size: 18px;
   font-family: 'Roboto', serif;
+  color: white;
+  font-size: bold;
+  border:2px solid black;
+  margin-right: 5px;
+}
+
+.botonSend:hover {
+  background:#f05a04;
+  color:white;
+  font-size:bolder;
+  border:2px solid #f05a04;
+  
 }
 
 .formCont {
   margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
 }
 
 footer {
@@ -346,8 +372,8 @@ footer a > i {
 }
 .modal1C {
   background: white;
-  width: 1050px;
-  height: 600px;
+  width: 850px;
+  height: 560px;
   border-radius: 10px;
   position: relative;  
   transform: translateY(-200%);
@@ -385,19 +411,24 @@ footer a > i {
 }
 
 .imagemodal {
-  height: 450px;
+  height: 420px;
   overflow: hidden;
   width: 700px;
   text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
   
 } 
 
 .modalSec1 {
-  width: 60%;
+  width: 58%;
 }
 
 .modalSec2 {
-  width: 35%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .modalSec2 p {
@@ -412,5 +443,201 @@ footer a > i {
   display:none;
 }
 
+.seeLiveC {
+  display: flex;
+  flex-direction: row;
+  
+}
+.mainPInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imagMainP {
+  width: 90%;
+}
+
+.mainCC {
+  display: flex;
+  justify-content: row;
+}
+
+.coding {
+  width: 700px;
+}
+
+.headTech {
+  width: 300px;
+}
+
+.hithereC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 1250px) {
+  .pblu {
+    font-size: 14px;
+  }
+
+  .hp3 {
+    font-size: 22px;
+  }
+
+  .botonSend{
+    font-size: 15px;
+    padding: 7px 12px;
+  }
+
+  .coding {
+    width: 500px;
+    margin-top:50px;
+  }
+}
+
+@media (max-width: 1070px){
+  .mainCC {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainPInfo {
+    margin: auto;
+    width: 100%
+  }
+  .aboutCont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutHeader {
+    padding-top:50px;
+    margin: auto;
+  }
+
+  #aboutmeH, #hiThere {
+    font-size: 38px;
+  }
+
+  #aboutmeD {
+    font-size: 20px;
+  }
+
+  #im {
+    font-size: 20px;
+  }
+
+  #ican {
+    font-size: 18px;
+  }
+
+  .intro {
+    height: 520px;
+  }
+
+  .marginTop, .listS {
+    margin-top: 80px;
+  }
+
+  .headTech {
+    width: 220px;
+  }
+
+  .mesagge {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  ul > h3 {
+    font-size: 19px;
+  }
+
+  ul > li {
+    font-size: 15px;
+  }
+
+  .formName {
+    flex-direction: column;
+  }
+  .formName input {
+    width:100%
+  }
+}
+
+@media (max-width: 710px){
+  .hithereC {
+    flex-direction: column;   
+  }
+
+  .coding {
+    width: 350px;
+  }
+
+  .headCont {
+    order: 1;
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .marginTop {
+    order: 2;
+    margin-top: 15px;
+    width: 87%;
+  }
+
+  .intro {
+    height: 100%;
+  }
+
+  .hithereC {
+    text-align: center;
+  }
+
+  .headTech {
+    width: 180px;
+  }
+
+  .skills {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .skills h3 {
+    text-align: center;
+    list-style: none;
+  }
+
+  .skills ul {
+    margin-bottom: 35px;
+  }
+
+  .skills ul li{
+    display:inline-block;
+    margin:4px;
+    list-style:square 
+  }
+
+  .mesagge {
+    font-size: 18px;
+  }
+
+  #aboutmeD {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px){
+  .coding {
+    width: 250px;
+  }
+
+  .mesagge {
+    margin-top: 1px;
+  }
+
+}
 
 
