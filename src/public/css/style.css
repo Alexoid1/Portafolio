@@ -561,8 +561,23 @@ footer a > i {
   .formName {
     flex-direction: column;
   }
+
   .formName input {
     width:100%
+  }
+
+  .modal1C {
+    width: 700px;
+    height: 420px;
+  }
+
+  .imagemodal {
+    width: 380px;
+    height: 280px;
+  }
+
+  .modalSec2 p {
+    font-size: 14px;
   }
 }
 
@@ -627,6 +642,45 @@ footer a > i {
   #aboutmeD {
     font-size: 16px;
   }
+
+  .mdm {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal1C {
+    width: 75%;
+    min-width: 295px;
+    height: auto;
+  }
+
+  .imagemodal {
+    width: 90%;
+    height: 180px;
+    margin: auto;
+  }
+  .modalSec2 {
+    width: 90%;
+
+  }
+
+  .modalSec2 p {
+    font-size: 12px;
+  } 
+
+  .techUsed p {
+    padding: 5px 3px;
+  }
+
+  .hp3 {
+    font-size: 19px;
+  }
+
+  .botonSend {
+    font-size: 13px;
+    padding:8px 14px 
+  }
+  
+  
 }
 
 @media (max-width: 380px){
