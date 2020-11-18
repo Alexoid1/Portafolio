@@ -6,6 +6,15 @@
 
 .bgNav {
   background: #263e5a;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: row;
+
 }
 
 .contAll {
@@ -679,8 +688,7 @@ footer a > i {
     font-size: 13px;
     padding:8px 14px 
   }
-  
-  
+
 }
 
 @media (max-width: 380px){
@@ -696,6 +704,20 @@ footer a > i {
     width: 100%;
     height: 130px;
     margin: auto;
+  }
+
+  nav {
+    position: fixed;
+    top:0;
+    z-index: 100;
+  }
+
+  .bgNav ul{
+    justify-content: center;
+  }
+
+  .nav-link {
+    margin:0;
   }
 
 }
