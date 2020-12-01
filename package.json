@@ -6,12 +6,12 @@
   "scripts": {
     "start": "node src/index.js"
   },
-  
   "keywords": [],
   "author": "Alexoid <alexzambra2610@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "http-server": "^0.12.3",
     "nodemailer": "^6.4.16"
   }
 }

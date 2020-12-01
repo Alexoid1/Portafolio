@@ -332,7 +332,7 @@
         <div class="col-12 col-md-7">
             
           <div class="">
-            <form action="/send-email" method="POST" class='formC' id='formContact'>
+            <form data-netlify="true" method="POST" class='formC' id='formContact'>
 
               <div class='formName'>
                 <input type="text" name="company" placeholder="Company" class='inputForm' id='company' >
@@ -344,6 +344,12 @@
               </div>
               <div>             
                 <textarea id="write" name="message" rows="3" cols="77"  placeholder='Write your message' class="w-100 textArea"></textarea>
+              </div>
+              <div>
+                <input type="file" name="myfile" placeholder="Upload file" class="inputForm w-100" >
+              </div>
+              <div>
+                <div data-netfily-recapcha="true"></div>
               </div>
   
               <button class="btn btn-primary mt-4 botonSend" id='botonSend' type='submit'>
