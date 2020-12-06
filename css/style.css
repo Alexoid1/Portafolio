@@ -23,6 +23,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
+
 .intro {
   height: 660px;
   width: 100%;
@@ -95,7 +97,7 @@
 }
 
 .proj1 {
-  background: #ee6c20;
+  background: #eea378;
   padding:35px 0;
 
 }
@@ -466,10 +468,13 @@ footer a > i {
 .imagMainP {
   width: 90%;
 }
-
+.imagMainP2 {
+  width: 43%;
+}
 .mainCC {
   display: flex;
   justify-content: row;
+  margin-top: 85px;
 }
 
 .coding {
