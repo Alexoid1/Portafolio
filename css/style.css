@@ -50,6 +50,13 @@
   width: 8%;
 }
 
+ul li {
+  list-style: none;
+  font-size: 22px;
+  margin-top: 17px;
+  color: rgb(197, 195, 192);
+}
+
 .listS li {
   margin-top: 19px;
 }
@@ -121,6 +128,16 @@
   margin: 20px 30px 10px 0;
 }
 
+.imagePro1 {
+  height: 420px;
+  background: linear-gradient(180deg, rgba(238, 250, 31, 0) 0%, rgba(0, 0, 0, 0.7) 65%);
+  font-family: 'Roboto', serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 .imagePro1:hover {
   background: none;
 }
@@ -152,16 +169,6 @@
   overflow: hidden;
   max-width: 350px;
   min-width: 305px;
-}
-
-.imagePro1 {
-  height: 420px;
-  background: linear-gradient(180deg, rgba(238, 250, 31, 0) 0%, rgba(0, 0, 0, 0.7) 65%);
-  font-family: 'Roboto', serif;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 
 .imagePro1 div {
@@ -247,13 +254,6 @@
   margin-top: 120px;
 }
 
-ul li {
-  list-style: none;
-  font-size: 22px;
-  margin-top: 17px;
-  color: rgb(197, 195, 192);
-}
-
 ul h3 {
   color: white;
   list-style: square;
@@ -332,7 +332,6 @@ ul h3 {
   font-size: 18px;
   font-family: 'Roboto', serif;
   color: white;
-  font-size: bold;
   border: 2px solid black;
   margin-right: 5px;
 }
@@ -340,7 +339,6 @@ ul h3 {
 .botonSend:hover {
   background: #f09561;
   color: white;
-  font-size: bolder;
   border: 2px solid #f05a04;
 }
 
@@ -469,7 +467,7 @@ footer a > i {
 
 .mainCC {
   display: flex;
-  justify-content: row;
+  flex-direction: row;
   margin-top: 85px;
 }
 
@@ -597,6 +595,7 @@ footer a > i {
 @media (max-width: 710px) {
   .hithereC {
     flex-direction: column;
+    text-align: center;
   }
 
   .coding {
@@ -617,10 +616,6 @@ footer a > i {
 
   .intro {
     height: 100%;
-  }
-
-  .hithereC {
-    text-align: center;
   }
 
   .headTech {
