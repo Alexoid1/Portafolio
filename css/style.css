@@ -515,6 +515,11 @@ footer a > i {
     padding: 7px 12px;
   }
 
+  .botonSend2 {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
+
   .coding {
     width: 500px;
     margin-top: 50px;
@@ -701,6 +706,11 @@ footer a > i {
   }
 
   .botonSend {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .botonSend2 {
     font-size: 13px;
     padding: 8px 14px;
   }
