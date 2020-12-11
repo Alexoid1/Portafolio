@@ -14,7 +14,6 @@
 .navUl {
   display: flex;
   flex-direction: row;
-
 }
 
 .contAll {
@@ -22,8 +21,6 @@
   margin: auto;
   font-family: 'Roboto', sans-serif;
 }
-
-
 
 .intro {
   height: 660px;
@@ -44,7 +41,7 @@
 
 .hello p {
   color: white;
-  font-size: 22px
+  font-size: 22px;
 }
 
 .listS {
@@ -80,7 +77,7 @@
 
 .hp3 {
   font-family: 'Roboto Slab', serif;
-  color: #1b2c3f; 
+  color: #1b2c3f;
 }
 
 .pblu {
@@ -93,13 +90,11 @@
   width: 70%;
   margin-left: 10px;
   border-top: 1px solid black;
-  
 }
 
 .proj1 {
   background: #eea378;
-  padding:35px 0;
-
+  padding: 35px 0;
 }
 
 .proj1 img {
@@ -110,17 +105,16 @@
   margin-left: 0;
 }
 
-.techUsed p{
+.techUsed p {
   padding: 10px 5px;
   border: 1px solid black;
   margin: 6px 6px 6px 0;
-  
 }
 
 .projects {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .colGrid {
@@ -135,15 +129,15 @@
   display: none;
 } */
 
-.imagePro1:hover #contentP2{
+.imagePro1:hover #contentP2 {
   display: none;
 }
 
-.imagePro1:hover #contentP3{
+.imagePro1:hover #contentP3 {
   display: none;
 }
 
-.imagePro1:hover #contentP4{
+.imagePro1:hover #contentP4 {
   display: none;
 }
 
@@ -155,14 +149,14 @@
   background-image: url(../image/article.png);
   background-size: cover;
   background-position: center;
-  overflow: hidden; 
+  overflow: hidden;
   max-width: 350px;
-  min-width: 305px; 
+  min-width: 305px;
 }
 
 .imagePro1 {
   height: 420px;
-  background: linear-gradient(180deg, rgba(238,250,31,0) 0%, rgba(0,0,0,0.7) 65%);  
+  background: linear-gradient(180deg, rgba(238, 250, 31, 0) 0%, rgba(0, 0, 0, 0.7) 65%);
   font-family: 'Roboto', serif;
   color: white;
   display: flex;
@@ -174,7 +168,6 @@
   margin: 0 10px;
   text-align: center;
 }
-
 
 .project2 {
   background-image: url(../image/event.png);
@@ -218,11 +211,9 @@
   font-size: 20px;
   color: white;
   font-weight: bolder;
-  
 }
 
 .about {
-  
   width: 100%;
   background: #1b2c3f;
 }
@@ -238,15 +229,12 @@
   width: 82%;
   margin: auto;
   margin-top: 100px;
-  
-  
 }
 
 .aboutCont h1 {
   color: #ee6c20;
   font-family: 'Roboto Slab', serif;
   font-size: 60px;
-   
 }
 
 .aboutCont p {
@@ -269,7 +257,7 @@ ul li {
 ul h3 {
   color: white;
   list-style: square;
-  display:list-item;
+  display: list-item;
 }
 
 .skills {
@@ -280,16 +268,14 @@ ul h3 {
   padding-bottom: 110px;
 }
 
-#contentP1{
+#contentP1 {
   width: 100%;
 }
-
 
 .footerCont {
   width: 82%;
   margin: 100px auto 0;
-  
-  font-family:  'Roboto', serif;
+  font-family: 'Roboto', serif;
 }
 
 .mesagge {
@@ -298,16 +284,16 @@ ul h3 {
 }
 
 .inputForm {
-  padding:15px;
-  border:none;
+  padding: 15px;
+  border: none;
   border-bottom: 1px solid #1b2c3f50;
   background: none;
-  outline: none; 
+  outline: none;
 }
 
 .inputForm:focus {
-  background: #f3e7e0; 
-  border:none;
+  background: #f3e7e0;
+  border: none;
   border-bottom: 1px solid #fff;
 }
 
@@ -322,42 +308,40 @@ ul h3 {
 }
 
 .formName input {
-   width: 47%;  
+  width: 47%;
 }
 
 .textArea {
-  
-  border:none;
+  border: none;
   border-bottom: 1px solid #1b2c3f50;
   background: none;
-  outline: none; 
+  outline: none;
   padding: 15px;
 }
 
 .textArea:focus {
   background: #f3e7e0;
-  outline: none; 
-  border:none;
+  outline: none;
+  border: none;
   border-bottom: 1px solid #fff;
 }
 
 .botonSend {
-  background:#ee6c20;
+  background: #ee6c20;
   padding: 10px 16px;
   font-size: 18px;
   font-family: 'Roboto', serif;
   color: white;
   font-size: bold;
-  border:2px solid black;
+  border: 2px solid black;
   margin-right: 5px;
 }
 
 .botonSend:hover {
-  background:#f09561;
-  color:white;
-  font-size:bolder;
-  border:2px solid #f05a04;
-  
+  background: #f09561;
+  color: white;
+  font-size: bolder;
+  border: 2px solid #f05a04;
 }
 
 .formCont {
@@ -370,32 +354,31 @@ footer {
   text-align: center;
   padding: 10px 0 16px;
   border-top: 1px solid #1b2c3f;
-
 }
 
 footer a > i {
   color: #1b2c3f;
 }
+
 .modalC {
- 
-  position:fixed;
+  position: fixed;
   z-index: 100;
-  width:100%;
+  width: 100%;
   height: 100vh;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
+
 .modal1C {
   background: white;
   width: 850px;
   height: 560px;
   border-radius: 10px;
-  position: relative;  
+  position: relative;
   transform: translateY(-200%);
   transition: ease-in-out 0.5s;
 }
@@ -406,15 +389,15 @@ footer a > i {
 
 .closeB {
   position: absolute;
-  top:5px;
+  top: 5px;
   right: 10px;
   display: inline-block;
   width: 30px;
   height: 30px;
   line-height: 30px;
-  font-size:20px;
-  background:#c44a4a;
-  color:white;
+  font-size: 20px;
+  background: #c44a4a;
+  color: white;
   text-align: center;
   border-radius: 100%;
   cursor: pointer;
@@ -437,8 +420,7 @@ footer a > i {
   text-align: center;
   border: 3px solid black;
   border-radius: 10px;
-  
-} 
+}
 
 .modalSec1 {
   width: 58%;
@@ -459,15 +441,18 @@ footer a > i {
   margin-left: 0;
 }
 
-.diss1, .diss2, .diss3, .diss4 {
-  display:none;
+.diss1,
+.diss2,
+.diss3,
+.diss4 {
+  display: none;
 }
 
 .seeLiveC {
   display: flex;
   flex-direction: row;
-  
 }
+
 .mainPInfo {
   display: flex;
   flex-direction: column;
@@ -477,9 +462,11 @@ footer a > i {
 .imagMainP {
   width: 90%;
 }
+
 .imagMainP2 {
   width: 43%;
 }
+
 .mainCC {
   display: flex;
   justify-content: row;
@@ -509,18 +496,18 @@ footer a > i {
     font-size: 22px;
   }
 
-  .botonSend{
+  .botonSend {
     font-size: 15px;
     padding: 7px 12px;
   }
 
   .coding {
     width: 500px;
-    margin-top:50px;
+    margin-top: 50px;
   }
 }
 
-@media (max-width: 1070px){
+@media (max-width: 1070px) {
   .mainCC {
     display: flex;
     flex-direction: column;
@@ -528,19 +515,21 @@ footer a > i {
 
   .mainPInfo {
     margin: auto;
-    width: 100%
+    width: 100%;
   }
-  .aboutCont{
+
+  .aboutCont {
     display: flex;
     flex-direction: column;
   }
 
   .aboutHeader {
-    padding-top:50px;
+    padding-top: 50px;
     margin: auto;
   }
 
-  #aboutmeH, #hiThere {
+  #aboutmeH,
+  #hiThere {
     font-size: 38px;
   }
 
@@ -560,7 +549,8 @@ footer a > i {
     height: 520px;
   }
 
-  .marginTop, .listS {
+  .marginTop,
+  .listS {
     margin-top: 80px;
   }
 
@@ -586,7 +576,7 @@ footer a > i {
   }
 
   .formName input {
-    width:100%
+    width: 100%;
   }
 
   .modal1C {
@@ -604,9 +594,9 @@ footer a > i {
   }
 }
 
-@media (max-width: 710px){
+@media (max-width: 710px) {
   .hithereC {
-    flex-direction: column;   
+    flex-direction: column;
   }
 
   .coding {
@@ -652,10 +642,10 @@ footer a > i {
     margin-bottom: 35px;
   }
 
-  .skills ul li{
-    display:inline-block;
-    margin:4px;
-    list-style:square 
+  .skills ul li {
+    display: inline-block;
+    margin: 4px;
+    list-style: square;
   }
 
   .mesagge {
@@ -670,6 +660,7 @@ footer a > i {
     display: flex;
     flex-direction: column;
   }
+
   .modal1C {
     width: 75%;
     min-width: 295px;
@@ -681,14 +672,14 @@ footer a > i {
     height: 180px;
     margin: auto;
   }
+
   .modalSec2 {
     width: 90%;
-
   }
 
   .modalSec2 p {
     font-size: 12px;
-  } 
+  }
 
   .techUsed p {
     padding: 5px 3px;
@@ -700,12 +691,11 @@ footer a > i {
 
   .botonSend {
     font-size: 13px;
-    padding:8px 14px 
+    padding: 8px 14px;
   }
-
 }
 
-@media (max-width: 380px){
+@media (max-width: 380px) {
   .coding {
     width: 250px;
   }
@@ -722,18 +712,15 @@ footer a > i {
 
   nav {
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 100;
   }
 
-  .bgNav ul{
+  .bgNav ul {
     justify-content: center;
   }
 
   .nav-link {
-    margin:0;
+    margin: 0;
   }
-
 }
-
-
