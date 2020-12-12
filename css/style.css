@@ -57,8 +57,22 @@ ul li {
   color: rgb(197, 195, 192);
 }
 
+footer a > i {
+  color: #1b2c3f;
+}
+
 .listS li {
   margin-top: 19px;
+}
+
+.listS li i {
+  padding: 7px;
+}
+
+.listS li i:hover {
+  padding: 7px;
+  border-radius: 10px;
+  background: #ee6c20;
 }
 
 .marginTop {
@@ -136,6 +150,17 @@ ul li {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+}
+
+.fotIcon {
+  margin: 5px;
+  padding: 7px;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.fotIcon:hover {
+  border: 5px solid #1b2c3f;
 }
 
 .imagePro1:hover {
@@ -367,10 +392,6 @@ footer {
   text-align: center;
   padding: 10px 0 16px;
   border-top: 1px solid #1b2c3f;
-}
-
-footer a > i {
-  color: #1b2c3f;
 }
 
 .modalC {
@@ -734,13 +755,6 @@ footer a > i {
     position: fixed;
     top: 0;
     z-index: 100;
-  }
-
-  .bgNav ul {
-    justify-content: center;
-  }
-
-  .nav-link {
-    margin: 0;
+    width: 100%;
   }
 }
