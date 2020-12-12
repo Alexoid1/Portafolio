@@ -59,6 +59,19 @@ ul li {
 
 .listS li {
   margin-top: 19px;
+  
+}
+
+.listS li i{
+  padding: 7px;
+ 
+}
+
+.listS li i:hover{
+  padding: 7px;
+  border-radius: 10px;
+  background: #263e5a;
+
 }
 
 .marginTop {
