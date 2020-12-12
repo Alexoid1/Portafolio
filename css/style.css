@@ -151,6 +151,18 @@ ul li {
   align-items: flex-end;
 }
 
+.fotIcon {
+  margin: 5px;
+  padding: 7px;
+  border-radius: 100%;
+  border: 5px solid white;
+  
+}
+
+.fotIcon:hover {
+  border: 5px solid #1b2c3f;
+}
+
 .imagePro1:hover {
   background: none;
 }
@@ -747,13 +759,10 @@ footer a > i {
     position: fixed;
     top: 0;
     z-index: 100;
+    width: 100%;
   }
 
-  .bgNav ul {
-    justify-content: center;
-  }
+ 
 
-  .nav-link {
-    margin: 0;
-  }
+  
 }
