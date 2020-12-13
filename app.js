@@ -23,11 +23,11 @@ const TypeWriter = function (txt,words,wait=3000) {
 TypeWriter.prototype.type=function(){
   const current= this.index%this.words.length;
   const fullText= this.words[current]
-
+  //check deleting
   if(this.isDeleting){
 
   }else{
-    
+
   }
   console.log(fullText);
   setTimeout(()=>this.type(),500)
