@@ -16,17 +16,28 @@ leng.addEventListener('click', () => {
 const TypeWriter = function (txt,words,wait=3000) {
   this.index=0;
   this.text='';
+  this.words=words
   this.isDeleting=false;
-  this.type=function(){
+  this.type()
+};
+TypeWriter.prototype.type=function(){
+  const current= this.index%this.words.length;
+  const fullText= this.words[current]
 
-  };
+  if(this.isDeleting){
+
+  }else{
+    
+  }
+  console.log(fullText);
+  setTimeout(()=>this.type(),500)
 };
 
-document.addEventListener('DOMcontentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);
 
 function init(){
   const textEle=document.getElementById('ican');
   const words=JSON.parse(textEle.getAttribute('data-words'));
   const wait=textEle.getAttribute('data-wait');
-  new TypeWriter(textEle,word,wait)
+  new TypeWriter(textEle,words,wait)
 }
