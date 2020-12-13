@@ -12,3 +12,21 @@ leng.addEventListener('click', () => {
     downloadResume.href = 'https://drive.google.com/u/0/uc?id=1PrrVdhM-YF7zorg10wRDWf9VbNybQn92&export=download';
   }
 });
+
+const TypeWriter = function (txt,words,wait=3000) {
+  this.index=0;
+  this.text='';
+  this.isDeleting=false;
+  this.type=function(){
+
+  };
+};
+
+document.addEventListener('DOMcontentLoaded', init);
+
+function init(){
+  const textEle=document.getElementById('ican');
+  const words=JSON.parse(textEle.getAttribute('data-words'));
+  const wait=textEle.getAttribute('data-wait');
+  new TypeWriter(textEle,word,wait)
+}
