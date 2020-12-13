@@ -13,9 +13,10 @@ leng.addEventListener('click', () => {
   }
 });
 
-const TypeWriter = function (txtele,words,wait=3000) {
-  this.txtele=txtele;
+const TypeWriter = function (txtEle,words,wait=3000) {
+  this.txtEle=txtEle;
   this.index=0;
+  this.wait=wait;
   this.text='';
   this.words=words;
   this.isDeleting=false;
@@ -29,12 +30,25 @@ TypeWriter.prototype.type=function(){
   //check deleting
   if(this.isDeleting){
     //Remove char
-    this.text = fullText.subString(0,this.text.length-1);
+    this.text = fullText.substring(0,this.text.length-1);
   }else{
     //add char
-    this.text = fullText.subString(0,this.text.length+1);
+    this.text = fullText.substring(0,this.text.length+1);
 
   }
+  this.txtEle.innerHTML=`<span class="cur">${this.text}</span>`;
+
+  let typeSpeed=300;
+  if(this.isDeleting){
+    typeSpeed /=2;
+  }
+
+  if(!this.isDeleting&&this.text===fullText){
+    typeSpeed=this.wait
+    this.isDeleting=true;
+
+  }
+
 
   console.log(fullText);
   setTimeout(()=>this.type(),500)
