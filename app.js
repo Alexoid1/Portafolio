@@ -13,22 +13,29 @@ leng.addEventListener('click', () => {
   }
 });
 
-const TypeWriter = function (txt,words,wait=3000) {
+const TypeWriter = function (txtele,words,wait=3000) {
+  this.txtele=txtele;
   this.index=0;
   this.text='';
-  this.words=words
+  this.words=words;
   this.isDeleting=false;
   this.type()
 };
+
+//type method
 TypeWriter.prototype.type=function(){
   const current= this.index%this.words.length;
   const fullText= this.words[current]
   //check deleting
   if(this.isDeleting){
-
+    //Remove char
+    this.text = fullText.subString(0,this.text.length-1);
   }else{
+    //add char
+    this.text = fullText.subString(0,this.text.length+1);
 
   }
+
   console.log(fullText);
   setTimeout(()=>this.type(),500)
 };
