@@ -15,6 +15,7 @@ const p3i1=document.getElementById('p3i1').addEventListener('click', changeImg3)
 const p3i2=document.getElementById('p3i2').addEventListener('click', changeImg3);
 const p4i1=document.getElementById('p4i1').addEventListener('click', changeImg4);
 const p4i2=document.getElementById('p4i2').addEventListener('click', changeImg4);
+const p4i3=document.getElementById('p4i3').addEventListener('click', changeImg4);
 
 
 let le = 'en';
@@ -64,7 +65,9 @@ function changeImg4 (){
   if(this.id==='p4i1'){
     eventt.src='./image/event.png'
   }else if(this.id==='p4i2'){
-    eventt.src='./image/events2.png'
+    eventt.src='./image/events2.png';
+  }else if(this.id==='p4i3'){
+    eventt.src='./image/events4.png'
   }
 }
 
