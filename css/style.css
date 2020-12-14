@@ -11,6 +11,18 @@
   justify-content: flex-end;
 }
 
+.selectImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 32px;
+}
+
+.selectImg button {
+  padding: 10px 15px;
+  margin: 15px 10px;
+}
+
 .navUl {
   display: flex;
   flex-direction: row;
@@ -115,7 +127,7 @@ footer a > i {
 
 .proj1 {
   background: #eea378;
-  padding: 35px 0;
+  padding: 35px 0 25px;
 }
 
 .proj1 img {
@@ -495,6 +507,7 @@ footer {
 
 .imagMainP {
   width: 90%;
+  
 }
 
 .imagMainP2 {
@@ -519,6 +532,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.cur {
+  border-right:0.2rem solid white;
 }
 
 @media (max-width: 1250px) {
