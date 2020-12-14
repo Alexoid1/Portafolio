@@ -11,6 +11,25 @@
   justify-content: flex-end;
 }
 
+.selectImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 32px;
+}
+
+.selectImg button {
+  padding: 10px 15px;
+  margin: 15px 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid grey;
+}
+
+.selectImg button:hover {
+  background-color:rgb(149, 147, 147);
+}
+
 .navUl {
   display: flex;
   flex-direction: row;
@@ -115,7 +134,7 @@ footer a > i {
 
 .proj1 {
   background: #eea378;
-  padding: 35px 0;
+  padding: 35px 0 25px;
 }
 
 .proj1 img {
@@ -352,13 +371,13 @@ ul h3 {
 }
 
 .botonSend {
-  background: #ee6c20;
+  background: #e08048;
   padding: 10px 16px;
   font-size: 18px;
   font-family: 'Roboto', serif;
   color: white;
-  border: 2px solid black;
-  margin-left: 5px;
+  border: 2px solid rgb(240, 164, 78);
+  margin-right: 5px;
 }
 
 .botonSend:hover {
@@ -368,12 +387,12 @@ ul h3 {
 }
 
 .botonSend2 {
-  background: #ee6c20;
+  background: #e08048;
   padding: 10px 16px;
   font-size: 18px;
   font-family: 'Roboto', serif;
   color: white;
-  border: 2px solid black;
+  border: 2px solid rgb(240, 164, 78);
 }
 
 .botonSend2:hover {
@@ -495,6 +514,7 @@ footer {
 
 .imagMainP {
   width: 90%;
+  
 }
 
 .imagMainP2 {
@@ -519,6 +539,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.cur {
+  border-right:0.2rem solid white;
 }
 
 @media (max-width: 1250px) {
@@ -550,6 +574,11 @@ footer {
   .mainCC {
     display: flex;
     flex-direction: column;
+  }
+  .selectImg button{
+    padding: 3px 10px;
+    margin: 7px 10px;
+    font-size: 11px;
   }
 
   .mainPInfo {
