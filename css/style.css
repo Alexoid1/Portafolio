@@ -568,6 +568,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .selectImg button{
+    padding: 3px 10px;
+    margin: 7px 10px;
+  }
 
   .mainPInfo {
     margin: auto;

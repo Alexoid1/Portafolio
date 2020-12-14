@@ -1,9 +1,14 @@
 const leng = document.getElementById('leng');
 const downloadResume = document.getElementById('downloadResume');
 const roboGif = document.getElementById('roboGif');
-const p1i1=document.getElementById('p1i1').addEventListener('click', img1);
-const p1i2=document.getElementById('p1i2').addEventListener('click', img2);
-const p1i3=document.getElementById('p1i3').addEventListener('click', img3);
+const bioSocial = document.getElementById('bioSocial');
+const p1i1=document.getElementById('p1i1').addEventListener('click', changeImg);
+const p1i2=document.getElementById('p1i2').addEventListener('click', changeImg);
+const p1i3=document.getElementById('p1i3').addEventListener('click', changeImg);
+const p2i1=document.getElementById('p2i1').addEventListener('click', changeImg2);
+const p2i2=document.getElementById('p2i2').addEventListener('click', changeImg2);
+const p2i3=document.getElementById('p2i3').addEventListener('click', changeImg2);
+const p2i4=document.getElementById('p2i4').addEventListener('click', changeImg2);
 
 let le = 'en';
 leng.addEventListener('click', () => {
@@ -18,17 +23,28 @@ leng.addEventListener('click', () => {
   }
 });
 
-function img1(){
-  roboGif.src='./image/img1.png'
+function changeImg (){
+  if(this.id==='p1i1'){
+    roboGif.src='./image/img1.png'
+  }else if(this.id==='p1i2'){
+    roboGif.src='./image/img2.png'
+  }else if(this.id==='p1i3'){
+    roboGif.src='./image/robogif.gif'
+  }
 }
 
-function img2(){
-  roboGif.src='./image/img2.png'
+function changeImg2 (){
+  if(this.id==='p2i1'){
+    bioSocial.src='./image/biologist.png'
+  }else if(this.id==='p2i2'){
+    bioSocial.src='./image/bio2.png'
+  }else if(this.id==='p2i3'){
+    bioSocial.src='./image/bio3.png'
+  }else if(this.id==='p2i4'){
+    bioSocial.src='./image/bio4.png'
+  }
 }
 
-function img3(){
-  roboGif.src='./image/robogif.gif'
-}
 
 const TypeWriter = function (txtEle,words,wait=3000) {
   this.txtEle=txtEle;
