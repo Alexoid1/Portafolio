@@ -2,6 +2,8 @@ const leng = document.getElementById('leng');
 const downloadResume = document.getElementById('downloadResume');
 const roboGif = document.getElementById('roboGif');
 const bioSocial = document.getElementById('bioSocial');
+const batery = document.getElementById('batery');
+const eventt = document.getElementById('event');
 const p1i1=document.getElementById('p1i1').addEventListener('click', changeImg);
 const p1i2=document.getElementById('p1i2').addEventListener('click', changeImg);
 const p1i3=document.getElementById('p1i3').addEventListener('click', changeImg);
@@ -9,6 +11,11 @@ const p2i1=document.getElementById('p2i1').addEventListener('click', changeImg2)
 const p2i2=document.getElementById('p2i2').addEventListener('click', changeImg2);
 const p2i3=document.getElementById('p2i3').addEventListener('click', changeImg2);
 const p2i4=document.getElementById('p2i4').addEventListener('click', changeImg2);
+const p3i1=document.getElementById('p3i1').addEventListener('click', changeImg3);
+const p3i2=document.getElementById('p3i2').addEventListener('click', changeImg3);
+const p4i1=document.getElementById('p4i1').addEventListener('click', changeImg4);
+const p4i2=document.getElementById('p4i2').addEventListener('click', changeImg4);
+
 
 let le = 'en';
 leng.addEventListener('click', () => {
@@ -44,6 +51,23 @@ function changeImg2 (){
     bioSocial.src='./image/bio4.png'
   }
 }
+
+function changeImg3 (){
+  if(this.id==='p3i1'){
+    batery.src='./image/screen.png'
+  }else if(this.id==='p3i2'){
+    batery.src='./image/bate2.gif'
+  }
+}
+
+function changeImg4 (){
+  if(this.id==='p4i1'){
+    eventt.src='./image/event.png'
+  }else if(this.id==='p4i2'){
+    eventt.src='./image/events2.png'
+  }
+}
+
 
 
 const TypeWriter = function (txtEle,words,wait=3000) {
