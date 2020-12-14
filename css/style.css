@@ -21,6 +21,8 @@
 .selectImg button {
   padding: 10px 15px;
   margin: 15px 10px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .navUl {
