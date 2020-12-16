@@ -1,8 +1,6 @@
 # My Portafolio
 This is a webpage in html, css and express where I show my best projects.
 
-![screenshot](./images/screen.png)
-
 
 ## Built With
 
