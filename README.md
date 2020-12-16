@@ -11,11 +11,7 @@ This is a webpage in html, css and express where I show my best projects.
 - Css
 - Nodemailer
 
-
-## Live Demo
-[Live Demo Link]()
  
-
 ### Prerequisites
 
 Browser
