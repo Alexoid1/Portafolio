@@ -4,6 +4,7 @@ const roboGif = document.getElementById('roboGif');
 const bioSocial = document.getElementById('bioSocial');
 const batery = document.getElementById('batery');
 const eventt = document.getElementById('event');
+const heroes = document.getElementById('heroes');
 const p1i1 = document.getElementById('p1i1').addEventListener('click', changeImg);
 const p1i2 = document.getElementById('p1i2').addEventListener('click', changeImg);
 const p1i3 = document.getElementById('p1i3').addEventListener('click', changeImg);
@@ -13,9 +14,12 @@ const p2i3 = document.getElementById('p2i3').addEventListener('click', changeImg
 const p2i4 = document.getElementById('p2i4').addEventListener('click', changeImg2);
 const p3i1 = document.getElementById('p3i1').addEventListener('click', changeImg3);
 const p3i2 = document.getElementById('p3i2').addEventListener('click', changeImg3);
+const p3i3 = document.getElementById('p3i3').addEventListener('click', changeImg3);
 const p4i1 = document.getElementById('p4i1').addEventListener('click', changeImg4);
 const p4i2 = document.getElementById('p4i2').addEventListener('click', changeImg4);
 const p4i3 = document.getElementById('p4i3').addEventListener('click', changeImg4);
+const p5i1 = document.getElementById('p5i1').addEventListener('click', changeImg5);
+const p5i2 = document.getElementById('p5i2').addEventListener('click', changeImg5);
 
 
 let le = 'en';
@@ -55,9 +59,11 @@ function changeImg2() {
 
 function changeImg3() {
   if (this.id === 'p3i1') {
-    batery.src = './image/screen.png';
+    batery.src = './image/login.png';
   } else if (this.id === 'p3i2') {
-    batery.src = './image/bate2.gif';
+    batery.src = './image/motos.png';
+  }else if (this.id === 'p3i3') {
+    batery.src = './image/book.png';
   }
 }
 
@@ -68,6 +74,14 @@ function changeImg4() {
     eventt.src = './image/events2.png';
   } else if (this.id === 'p4i3') {
     eventt.src = './image/events4.png';
+  }
+}
+
+function changeImg5() {
+  if (this.id === 'p5i1') {
+    heroes.src = './image/heroes.png';
+  } else if (this.id === 'p5i2') {
+    heroes.src = './image/screen.png';
   }
 }
 
